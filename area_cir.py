@@ -1,12 +1,9 @@
-import sys
 import math
+def Are_cirf(radius):
+    Area=math.pi*radius*radius
+    circle=2*math.pi*radius
+    return Area,circle
 
-
-if len(sys.argv) > 1:
-    radius = float(sys.argv[1])  
-else:
-    
-    radius = float(input("Enter the radius: "))
-
-area = math.pi * radius * radius
-print(f"Area of circle with radius {radius} is {area}")
+if __name__=="__main__":
+    radius=int(input("Enter the radius"))
+    print(Are_cirf(radius))
